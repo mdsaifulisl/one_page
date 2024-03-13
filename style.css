@@ -248,11 +248,21 @@ header .loging i:hover{
         z-index: -1;
     }
 
+    .home .item .sand a{
+        padding: .6rem 2%;
+        font-size: 15px;
+    }
+
 }
-/* @media (max-width:720px){
+@media (max-width:720px){
      .heading{
         font-size: 35px;
         width: 90%;
+    }
+
+    header .loging a{
+        font-size: 15px;
+        padding: 0rem 1rem;
     }
 }
 @media (max-width:540px){
@@ -260,7 +270,8 @@ header .loging i:hover{
         font-size: 35px;
         width: 100%;
     }
-    p{
-        font-size: 15px;
+
+    header .logo img{
+        width: 60%;
     }
-} */
+}
