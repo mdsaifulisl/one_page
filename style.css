@@ -1,0 +1,266 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&display=swap');
+
+
+
+:root{
+    --main-color:#;
+    --secondary-color:#;
+    --button:#;
+    --text-color:#;
+    --secondary-text-color:#;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Palanquin Dark", sans-serif;
+}
+html,
+body{
+    scroll-behavior: smooth;
+}
+
+.heading{
+    font-size: 56px;
+    line-height: 3rem;
+}
+p{
+    font-size: 20px;
+}
+
+.header{
+    position: relative;
+    background: url(./img/Rectangle\ 1249.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+
+/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    position: relative;
+   
+}
+header .logo img{
+    width: 90%;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+header nav ul li{
+    margin: 1rem;
+    position: relative;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
+header nav ul li a:hover{
+    color: #7B66FF;
+}
+
+header .loging a{
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 0rem 2rem;
+    border-radius: 5px;
+    background-color: #7B66FF;
+    color: black;
+}
+header .loging a:hover{
+    color: aliceblue;
+}
+header .loging i{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: beige;
+    display: none;
+    margin-left: 5px;
+    cursor: pointer;
+}
+header .loging i:hover{
+    background-color: #b2dfc3;
+}
+.home{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center!important;
+    height: 70vh;
+    z-index: 1;
+    
+}
+.home .item{
+   
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center!important;
+   
+}
+.home .item p{
+    font-size: 24px;
+    
+}
+.home .item .sand{
+    width: 80%;
+    height: 50px;
+    background-color: #96EFFF;
+    border-radius: 10px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.home .item .sand input{
+    width: 60%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    background-color: transparent;
+   
+}
+.home .item .sand a{
+    padding: .6rem 4.7%;
+    background-color: #5FBDFF;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+.home .item .icon{
+    margin-top: 50px;
+}
+.home .item .icon a{
+    font-size: 40px;
+    margin: 10px;
+    text-decoration: none;
+    color: #7B66FF;
+}
+.home .item .icon a:hover{
+    color: chocolate;
+}
+.home .item .arro {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+.home .item .arro a{
+    font-size: 20px;
+   color: black;
+    text-decoration: none;
+}
+.home .item .arro a i{
+   margin-left: 15px;
+   color: #7B66FF;
+}
+.home .item .arro a:hover i{
+    color: chocolate;
+}
+.home .img{
+    position: absolute;
+    right: 5%;
+    z-index: -1;
+}
+
+.home .img img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:1320px){
+    .heading{
+        font-size: 50px;
+    }
+    .home .item .sand{
+        width: 85%;}
+}
+@media (max-width:1140px){
+    .heading{
+        font-size: 40px;
+    }
+}
+@media (max-width:990px){
+    .heading{
+        font-size: 38px;
+       
+    }
+
+    header nav {
+        height: 30vh;
+        width: 50%;
+        background-color: chartreuse;
+        position: absolute;
+        top: 3rem;
+        left: -9999px;
+        transition: .5s;
+        border-radius: 5px;
+        z-index: 2;
+    }
+    header nav.active{
+        left: 0;
+    }
+    header nav ul{
+        display: inline-block;
+    }
+    header nav ul li{
+        margin: 0;
+        margin-top: 1rem;
+        text-align: left;
+    }
+    header .loging i{
+        display: inline-block;
+    }
+    .home .item{
+   
+        width: 100%;
+    }
+
+    .home .item .sand{
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .home .img{
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
+
+}
+/* @media (max-width:720px){
+     .heading{
+        font-size: 35px;
+        width: 90%;
+    }
+}
+@media (max-width:540px){
+    .heading{
+        font-size: 35px;
+        width: 100%;
+    }
+    p{
+        font-size: 15px;
+    }
+} */
